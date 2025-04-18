@@ -23,20 +23,22 @@ body {
     text-align: center;
   }
   
-  .gallery .photos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 3px solid #ffb6c1;
-    border-radius: 10px;
+  .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Optional space between images */
+}
+
+/* Styling for the images */
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures images are not stretched */
+  border: 3px solid #ffb6c1;
+  border-radius: 10px;
+  margin: 10px;
   }
   
   .timeline {
