@@ -1,0 +1,155 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: pink;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #ffb6c1;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .gallery .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ffb6c1;
+    border-radius: 10px;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .timeline-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center; /* This centers the text within each entry */
+  }
+  
+  .entry {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* You can adjust the max-width to fit your design */
+    margin: 0 auto;
+  }
+  
+  .entry {
+    background: #fff0f6;
+    border: 2px dashed #ff99cc;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+  }  
+  
+
+  .letter p {
+    max-width: 500px;
+    margin: 1rem auto;
+    background: #fff;
+    padding: 1rem;
+    border: 2px dashed pink;
+    border-radius: 10px;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background: #ffc0cb;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 4px solid #ffb6c1;
+  }
+  .hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    transform: rotate(45deg);
+    animation: float 8s linear infinite;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) scale(1) rotate(45deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) scale(1.2) rotate(45deg);
+      opacity: 0;
+    }
+  }
+  audio {
+    display: none;
+  }
+  
+  
